@@ -1,5 +1,7 @@
 # Gentle Stomach Map NYC
 
+**Live site: https://nyc-stomach-map.vercel.app**
+
 An NYC food map for people with acid reflux or gastritis. Shows only places that are **open right now**, what to order and what to avoid at each, and a "My stomach hurts now" button that lists what's open within a 20-minute walk, nearest first. Home / School / Work buttons sort by distance without GPS.
 
 Static site, no build step, deployed on Vercel.
