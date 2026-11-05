@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gentle Stomach Map NYC</title>
+<meta name="description" content="An NYC food map for people with acid reflux or gastritis: only places open right now, with what to order and what to avoid.">
+<meta name="theme-color" content="#f3f4f1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23b8742a'/%3E%3Cpath d='M9 17c0 4 3 7 7 7s7-3 7-7H9z' fill='%23fff'/%3E%3Cpath d='M12 13c0-2 1-3 1-4M16 13c0-2 1-3 1-4M20 13c0-2 1-3 1-4' stroke='%23fff' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <div>
+      <h1>Gentle Stomach Map <span class="brand-sub">NYC</span></h1>
+      <p class="brand-tag">Food for reflux and gastritis days. Shows only places <strong>open right now</strong>.</p>
+    </div>
+  </div>
+  <div class="clock" id="clock" aria-live="off"></div>
+</header>
+
+<main class="layout">
+  <section class="map-wrap" aria-label="Map">
+    <div id="map" role="application" aria-label="Map of New York showing gentle-food places open now"></div>
+
+    <div class="map-controls">
+      <button class="btn btn-primary btn-sos" id="btn-sos" type="button">
+        <span class="sos-icon" aria-hidden="true"></span>
+        <span>My stomach hurts now</span>
+      </button>
+      <button class="btn btn-ghost" id="btn-locate" type="button" aria-label="Use my location">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>
+        <span>My location</span>
+      </button>
+    </div>
+
+    <div class="legend" aria-hidden="true">
+      <span><i class="dot dot-safe"></i>Safe spot (whole menu is gentle)</span>
+      <span><i class="dot dot-ok"></i>Has gentle options (see “Order”)</span>
+      <span><i class="dot dot-soon"></i>Closing soon</span>
+    </div>
+  </section>
+
+  <aside class="panel" id="panel" aria-label="Place list">
+    <div class="panel-grip" id="panel-grip" aria-hidden="true"></div>
+
+    <div class="filters" role="group" aria-label="Filters">
+      <label class="toggle">
+        <input type="checkbox" id="f-open" checked>
+        <span class="toggle-ui" aria-hidden="true"></span>
+        <span>Open now only</span>
+      </label>
+      <div class="chips anchors" id="anchors" aria-label="My usual places">
+        <button class="chip chip-anchor" data-anchor="home" data-lat="40.74710" data-lng="-73.94530" type="button">🏠 Home · Court Sq</button>
+        <button class="chip chip-anchor" data-anchor="school" data-lat="40.72990" data-lng="-73.99740" type="button">🎓 School · NYU</button>
+        <button class="chip chip-anchor" data-anchor="work" data-lat="40.77940" data-lng="-73.96320" type="button">🏛 Work · The Met</button>
+      </div>
+      <div class="chips" id="chips">
+        <button class="chip is-on" data-cat="all" type="button">All</button>
+        <button class="chip" data-cat="congee" type="button">Congee</button>
+        <button class="chip" data-cat="noodle" type="button">Noodle soup / Udon</button>
+        <button class="chip" data-cat="soymilk" type="button">Soy milk · Breakfast</button>
+        <button class="chip" data-cat="bakery" type="button">Buns · Bakery</button>
+        <button class="chip" data-cat="grocery" type="button">Grocery · Pharmacy</button>
+        <button class="chip" data-cat="late" type="button">Late night / 24h</button>
+      </div>
+    </div>
+
+    <div class="sos-banner" id="sos-banner" hidden>
+      <div>
+        <strong>Emergency mode</strong>
+        <p id="sos-text">Finding places open now within a 20-minute walk…</p>
+      </div>
+      <button class="btn btn-small" id="btn-sos-off" type="button">Exit</button>
+    </div>
+
+    <p class="status" id="status" aria-live="polite"></p>
+
+    <ol class="cards" id="cards"></ol>
+
+    <section class="chains" id="chains">
+      <h2>Chain store cheat sheet</h2>
+      <p class="muted">The chains that are on every corner: what to buy, what to skip. Tap to expand.</p>
+      <div id="chain-list"></div>
+    </section>
+
+    <section class="rules">
+      <h2>Ground rules on a reflux day</h2>
+      <ul>
+        <li><strong>Warm, never iced.</strong> New York defaults to ice water and iced drinks. Say “no ice, room temperature” or “hot water, please”.</li>
+        <li><strong>Zero caffeine.</strong> No coffee, black tea, green tea, matcha or energy drinks. Chamomile is fine; ginger tea in small amounts.</li>
+        <li><strong>No grease, no spice, no acid.</strong> Skip fried food, chili oil, tomato sauce, citrus and vinegar. At Chinese places: “no chili oil, less oil, steamed please”.</li>
+        <li><strong>Small portions, stay upright.</strong> Wait two to three hours after eating before lying down; raise the head of the bed if nights are bad.</li>
+        <li><strong>This is not medical advice.</strong> Severe pain, vomiting blood, black stools or trouble swallowing: go to the ER or call 911.</li>
+      </ul>
+    </section>
+
+    <footer class="foot">
+      <p>Hours come from official sites, review sites and news, and can change without notice; call ahead when it matters. Spotted a mistake, a closure or a good new place? Add it.</p>
+      <p class="muted">Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, tiles © <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>.</p>
+    </footer>
+  </aside>
+</main>
+
+<template id="tpl-card">
+  <li class="card">
+    <button class="card-head" type="button">
+      <span class="card-dot dot" aria-hidden="true"></span>
+      <span class="card-title">
+        <span class="card-name"></span>
+        <span class="card-name-en"></span>
+      </span>
+      <span class="card-meta">
+        <span class="card-dist"></span>
+        <span class="card-open"></span>
+      </span>
+    </button>
+    <div class="card-body" hidden>
+      <p class="card-addr"></p>
+      <div class="card-cols">
+        <div>
+          <h4 class="h-buy">Order</h4>
+          <ul class="card-buy"></ul>
+        </div>
+        <div>
+          <h4 class="h-avoid">Avoid</h4>
+          <p class="card-avoid"></p>
+        </div>
+      </div>
+      <p class="card-hours"></p>
+      <div class="card-actions">
+        <a class="btn btn-small btn-ghost card-nav" target="_blank" rel="noopener">Directions</a>
+        <a class="btn btn-small btn-ghost card-src" target="_blank" rel="noopener">Source</a>
+      </div>
+    </div>
+  </li>
+</template>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

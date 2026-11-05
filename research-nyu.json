@@ -1,0 +1,439 @@
+{
+  "places": [
+    {
+      "name": "Sanuki Udon",
+      "name_local": "讃岐うどん",
+      "address": "31 W 4th St, New York, NY 10012",
+      "neighborhood": "Greenwich Village (NYU / across from Stern)",
+      "lat": 40.72905,
+      "lng": -73.99545,
+      "hours": "Mo-Su 11:30-20:30",
+      "tier": "safe",
+      "cats": [
+        "noodle"
+      ],
+      "buy": [
+        "Kake udon, hot clear dashi broth (かけうどん)",
+        "Kitsune udon with sweet tofu (きつねうどん)",
+        "Wakame or plain udon in hot broth, ask for no tempura (わかめうどん)"
+      ],
+      "avoid": "Skip the fried tempura toppings, curry udon and cold/iced drinks; ask for no shichimi pepper.",
+      "confidence": "medium",
+      "source": "https://nyunews.com/culture/dining/2024/03/28/sanuki-udon-review",
+      "notes": "Assembly-line Sanuki-style udon shop opened Jan 2024; listings and reviews through Dec 2025 show it operating. Hours from third-party listings (11:30-20:30 daily); Instagram @sanukiudonusa."
+    },
+    {
+      "name": "Raku SoHo",
+      "name_local": "楽",
+      "address": "48 MacDougal St, New York, NY 10012",
+      "neighborhood": "SoHo / South Village",
+      "lat": 40.7268,
+      "lng": -74.0023,
+      "hours": "Mo 17:00-21:30; Tu-Th,Su 12:00-21:30; Fr,Sa 12:00-22:00",
+      "tier": "safe",
+      "cats": [
+        "noodle"
+      ],
+      "buy": [
+        "Kake udon, hot clear broth (かけうどん)",
+        "Niku udon, beef in hot broth (肉うどん)",
+        "Kitsune udon (きつねうどん)",
+        "Hot green tea (お茶)"
+      ],
+      "avoid": "Skip curry udon, tempura, mentaiko and anything spicy; have the broth warm, not cold bukkake style.",
+      "confidence": "medium",
+      "source": "https://www.toasttab.com/local/order/rakusoho",
+      "notes": "Phone (212) 989-4797. Hours conflict across listings: Toast ordering page says closed Monday, 12:00-21:30 other days; Franki/Atly list Monday 17:00-21:30 and later Fri/Sat close. Reported cash only. Small room, often a wait at dinner."
+    },
+    {
+      "name": "Omen Azen",
+      "name_local": "おめん",
+      "address": "113 Thompson St, New York, NY 10012",
+      "neighborhood": "SoHo",
+      "lat": 40.7254,
+      "lng": -74.0013,
+      "hours": "Tu-Sa 17:00-22:00; Su,Mo off",
+      "tier": "ok",
+      "cats": [
+        "noodle"
+      ],
+      "buy": [
+        "Omen udon in hot dashi broth with vegetables (おめん)",
+        "Steamed or simmered vegetables (野菜の炊き合わせ)",
+        "Plain rice (ご飯)"
+      ],
+      "avoid": "Pricey Kyoto-style spot; skip the tempura, sashimi with wasabi, and sake; order the udon hot not cold.",
+      "confidence": "low",
+      "source": "https://www.theinfatuation.com/new-york/reviews/omen-azen",
+      "notes": "Phone (212) 925-8923. Dinner only; sources disagree on Sunday/Monday (one says closed Su+Mo, another daily 17:00-22:00, OpenTable says 18:00-23:00). Reviews dated May 2025 show it operating."
+    },
+    {
+      "name": "Ootoya Union Square",
+      "name_local": "大戸屋",
+      "address": "41 E 11th St, New York, NY 10003",
+      "neighborhood": "Greenwich Village / Union Square south",
+      "lat": 40.7329,
+      "lng": -73.9926,
+      "hours": "Mo-Su 11:30-15:00,17:00-22:00",
+      "tier": "ok",
+      "cats": [
+        "noodle"
+      ],
+      "buy": [
+        "Grilled salted mackerel set with rice and miso soup (しまほっけ/さば塩焼き定食)",
+        "Chicken and egg rice bowl, mild (親子丼)",
+        "Steamed chawanmushi egg custard (茶碗蒸し)",
+        "Hot soba or udon in clear broth (温かいそば/うどん)"
+      ],
+      "avoid": "Skip the fried katsu, karaage, spicy miso dishes and iced tea; ask for hot tea.",
+      "confidence": "low",
+      "source": "https://blog.resy.com/2026/01/ootoya-nyc/",
+      "notes": "Phone (212) 473-4300. Japanese teishoku (set meal) chain; Resy article Jan 2026 lists this branch as open. Hours above are typical Ootoya hours and NOT confirmed for 2026 — call ahead; may close between lunch and dinner."
+    },
+    {
+      "name": "Saigon Shack",
+      "name_local": "",
+      "address": "114 MacDougal St, New York, NY 10012",
+      "neighborhood": "Greenwich Village (MacDougal St)",
+      "lat": 40.7298,
+      "lng": -74.0005,
+      "hours": "Mo-Th,Su 11:00-21:00; Fr,Sa 11:00-21:30",
+      "tier": "ok",
+      "cats": [
+        "noodle"
+      ],
+      "buy": [
+        "Chicken pho, clear broth (phở gà)",
+        "Beef pho with rare steak, clear broth (phở tái)",
+        "Plain steamed rice (cơm trắng)"
+      ],
+      "avoid": "Skip the fried spring rolls, banh mi with chili/pickles and Vietnamese iced coffee; leave out the lime, hoisin and sriracha on the side.",
+      "confidence": "medium",
+      "source": "https://www.timeout.com/newyork/restaurants/saigon-shack",
+      "notes": "Phone (212) 228-0588. Cash only per Time Out. Hours from Time Out and Franki agree; other listings show 11:00-22:00 or 11:00-20:00. Busy with NYU students, small room."
+    },
+    {
+      "name": "Tim Ho Wan",
+      "name_local": "添好運",
+      "address": "85 4th Ave, New York, NY 10003",
+      "neighborhood": "NoHo / East Village border (4th Ave at E 10th-11th)",
+      "lat": 40.7315,
+      "lng": -73.9906,
+      "hours": "Mo-Su 11:00-21:00",
+      "tier": "ok",
+      "cats": [
+        "congee"
+      ],
+      "buy": [
+        "Congee with pork and century egg (皮蛋瘦肉粥)",
+        "Steamed rice rolls, plain or with shrimp (腸粉)",
+        "Steamed shrimp dumplings (蝦餃)",
+        "Steamed chicken with mushroom on rice (北菇滑雞飯)"
+      ],
+      "avoid": "Skip the baked BBQ pork buns, fried items, chili oil and anything with XO sauce; ask for hot tea.",
+      "confidence": "medium",
+      "source": "https://www.timhowan.com/stores/usa",
+      "notes": "Phone (212) 228-2800. Official USA store page snippet shows 11:00-21:00 seven days, but a partial listing shows Wed/Thu 11:30-20:30 — call to confirm. Michelin-listed Hong Kong dim sum chain; lines on weekends."
+    },
+    {
+      "name": "Uncle Ted's Modern Chinese",
+      "name_local": "",
+      "address": "38 E 8th St, New York, NY 10003",
+      "neighborhood": "Greenwich Village (E 8th St near University Pl)",
+      "lat": 40.7311,
+      "lng": -73.9933,
+      "hours": "Mo-Su 11:00-21:15",
+      "tier": "ok",
+      "cats": [
+        "noodle"
+      ],
+      "buy": [
+        "Wonton soup, clear broth (雲吞湯)",
+        "Build-your-own steamed chicken or fish with steamed vegetables, sauce on side (清蒸雞/魚配蔬菜)",
+        "Plain steamed white rice (白飯)"
+      ],
+      "avoid": "Skip General Tso's, sesame chicken, hot & sour soup, Szechuan dishes and anything fried or in brown sauce.",
+      "confidence": "low",
+      "source": "https://www.opentable.com/r/uncle-teds-new-york",
+      "notes": "Phone (212) 777-1395. Original 163 Bleecker St location destroyed by fire May 2021; relocated to 36-38 E 8th St. OpenTable shows diner reviews dated 2026 and hours 11:00-21:15 daily, but some directories still show old address — confirm by phone. Menu has a 'choose protein + steamed vegetables' option that suits a bland diet."
+    },
+    {
+      "name": "Fay Da Bakery",
+      "name_local": "發達餅家",
+      "address": "321 6th Ave, New York, NY 10014",
+      "neighborhood": "Greenwich Village (6th Ave at W 3rd St)",
+      "lat": 40.7307,
+      "lng": -74.0006,
+      "hours": "Mo-Su 07:00-20:30",
+      "tier": "ok",
+      "cats": [
+        "bakery"
+      ],
+      "buy": [
+        "Plain steamed pork bun or vegetable bun (叉燒包/菜包, steamed not baked)",
+        "Soft plain milk bread or raisin roll (牛奶包)",
+        "Egg custard tart, mild (蛋撻)",
+        "Soy milk, ask if hot (豆漿)"
+      ],
+      "avoid": "Skip the fried sesame balls, curry puffs, iced bubble tea and heavily sweet cream cakes.",
+      "confidence": "medium",
+      "source": "https://nyunews.com/2018/08/20/dining-fay-da-bakery-offers-asian-pastries-and-snacks-on-west-fourth-street",
+      "notes": "Phone (212) 255-9888. Hong Kong-style bakery chain; listings give 07:00-20:30 or 07:00-21:00 daily. Steamed buns and hot soy milk availability vary by time of day — buns sell out late afternoon."
+    },
+    {
+      "name": "Breads Bakery (Union Square)",
+      "name_local": "",
+      "address": "18 E 16th St, New York, NY 10003",
+      "neighborhood": "Union Square (north side, ~12 min from WSP)",
+      "lat": 40.7368,
+      "lng": -73.9915,
+      "hours": "Mo-Su 07:00-20:00",
+      "tier": "ok",
+      "cats": [
+        "bakery"
+      ],
+      "buy": [
+        "Plain challah or sliced white/whole wheat bread (challah)",
+        "Plain croissant or brioche roll",
+        "Oatmeal or porridge when on the breakfast menu",
+        "Chamomile or herbal tea, hot"
+      ],
+      "avoid": "Skip the chocolate babka, rugelach, coffee and anything with citrus glaze or tomato.",
+      "confidence": "high",
+      "source": "https://breadsbakery.com/location/usq",
+      "notes": "Phone (212) 633-2253. Hours from the official site (07:00-20:00 daily). Flagship with seating; good for plain bread to take home."
+    },
+    {
+      "name": "Bagel Bob's on York",
+      "name_local": "",
+      "address": "51 University Pl, New York, NY 10003",
+      "neighborhood": "Greenwich Village (University Pl at E 9th-10th St)",
+      "lat": 40.7318,
+      "lng": -73.9941,
+      "hours": "Mo-Su 06:00-19:00",
+      "tier": "ok",
+      "cats": [
+        "bakery"
+      ],
+      "buy": [
+        "Plain or egg bagel, toasted, with butter or plain cream cheese",
+        "Plain bagel with egg and cheese (no sauce)",
+        "Oatmeal when available"
+      ],
+      "avoid": "Skip the everything/onion/garlic bagels, lox with capers, coffee and iced drinks.",
+      "confidence": "low",
+      "source": "https://nyunews.com/culture/dining/2022/10/25/best-cheap-eats-near-nyu",
+      "notes": "Hours (06:00-19:00 daily) come from a 2017 NYU News guide; reviews from Oct 2025 confirm it is operating. Historically cash only; 10% NYU student discount reported. Confirm hours by phone."
+    },
+    {
+      "name": "Waverly Diner",
+      "name_local": "",
+      "address": "385 6th Ave, New York, NY 10014",
+      "neighborhood": "Greenwich Village (6th Ave at Waverly Pl)",
+      "lat": 40.732,
+      "lng": -74.0003,
+      "hours": "24/7",
+      "tier": "ok",
+      "cats": [
+        "late"
+      ],
+      "buy": [
+        "Oatmeal with banana, hot",
+        "Chicken noodle or chicken rice soup",
+        "Plain toast or English muffin with butter",
+        "Poached or scrambled eggs with plain toast; chamomile tea"
+      ],
+      "avoid": "Skip the fries, burgers, Greek salad with tomato, orange juice, coffee and sodas.",
+      "confidence": "medium",
+      "source": "https://villageview.nyc/2024/07/05/a-gem-survives/",
+      "notes": "Phone (212) 675-3181. Most sources (NYC Tourism, 2024 Village View, photo blogs) say open 24 hours; TripAdvisor shows 07:00-23:00 and some delivery apps show shorter windows — call late at night to confirm. Classic Greek diner, large menu."
+    },
+    {
+      "name": "Washington Square Diner",
+      "name_local": "",
+      "address": "150 W 4th St, New York, NY 10012",
+      "neighborhood": "Greenwich Village (W 4th St at 6th Ave)",
+      "lat": 40.7315,
+      "lng": -74.0007,
+      "hours": "Mo-Su 06:00-24:00",
+      "tier": "ok",
+      "cats": [
+        "late"
+      ],
+      "buy": [
+        "Oatmeal with banana",
+        "Chicken noodle soup",
+        "Plain toast or bagel with butter; scrambled eggs",
+        "Hot herbal tea"
+      ],
+      "avoid": "Skip fried sides, burgers, tomato-based soups, citrus juices and coffee.",
+      "confidence": "low",
+      "source": "https://nyunews.com/culture/dining/2022/09/30/best-diners-near-nyu/",
+      "notes": "Phone (212) 533-9306. Hours conflict badly: several listings say open 24 hours, Sideways/WhereYouEat say 06:00-24:00, NYU News (2022) said 07:00-23:00. Reviews dated Aug and Nov 2025 confirm it is operating. Student discount historically honored."
+    },
+    {
+      "name": "Sunrise Mart SoHo",
+      "name_local": "サンライズマート",
+      "address": "494 Broome St, New York, NY 10013",
+      "neighborhood": "SoHo (Broome St at Wooster, ~13 min from WSP)",
+      "lat": 40.7232,
+      "lng": -74.0023,
+      "hours": "Mo-Su 11:00-20:00",
+      "tier": "ok",
+      "cats": [
+        "grocery"
+      ],
+      "buy": [
+        "Onigiri rice balls, salmon or umeboshi (おにぎり)",
+        "Instant udon and dashi packets for home (うどん・だし)",
+        "Plain steamed rice packs and natto-free bento (ご飯パック)",
+        "Hot meals from the deli counter before 19:00 (お弁当)"
+      ],
+      "avoid": "Skip the spicy mentaiko onigiri, fried karaage bento, mochi ice cream and canned iced coffee.",
+      "confidence": "medium",
+      "source": "https://acbmpartners.blogspot.com/2025/09/sunrise-mart-soho-japanese-grocery-gem.html",
+      "notes": "Phone (212) 219-0033. The East Village (Stuyvesant St) Sunrise Mart closed in April 2022; this SoHo branch is the surviving downtown store. A Sept 2025 blog and user listings give 11:00-20:00 daily, hot food counter until about 19:00. One MapQuest listing shows 'Closed' but has June 2025 reviews — verify by phone."
+    },
+    {
+      "name": "Whole Foods Market Union Square",
+      "name_local": "",
+      "address": "4 Union Square S, New York, NY 10003",
+      "neighborhood": "Union Square south side",
+      "lat": 40.7347,
+      "lng": -73.9907,
+      "hours": "Mo-Su 08:00-23:00",
+      "tier": "ok",
+      "cats": [
+        "grocery",
+        "late"
+      ],
+      "buy": [
+        "Hot soup bar: chicken noodle or plain vegetable broth soups",
+        "Oatmeal from the hot bar (mornings) and bananas",
+        "Plain rice, steamed vegetables and roast chicken from the hot bar",
+        "Chamomile and ginger tea, plain bread and bagels"
+      ],
+      "avoid": "Skip the spicy and tomato-based soups, kombucha, citrus and the cold-pressed juices.",
+      "confidence": "medium",
+      "source": "https://www.timeout.com/newyork/shopping/whole-foods-market-4",
+      "notes": "Phone (212) 673-5388. Time Out and other listings agree on 08:00-23:00 daily; one ride-share listing shows a 21:00 close — check the Whole Foods store locator. Upstairs seating area for eating hot-bar food."
+    },
+    {
+      "name": "Trader Joe's (14th & 3rd)",
+      "name_local": "",
+      "address": "142 E 14th St, New York, NY 10003",
+      "neighborhood": "Union Square / East Village border",
+      "lat": 40.7328,
+      "lng": -73.9869,
+      "hours": "Mo-Su 08:00-21:00",
+      "tier": "ok",
+      "cats": [
+        "grocery"
+      ],
+      "buy": [
+        "Steel-cut or instant oatmeal, bananas",
+        "Frozen plain rice, chicken broth and miso soup",
+        "Plain bagels, sliced white bread, rice cakes",
+        "Chamomile and ginger tea bags"
+      ],
+      "avoid": "Skip the spicy frozen meals, Everything But the Bagel seasoning, sparkling water and citrus-heavy snacks.",
+      "confidence": "medium",
+      "source": "https://www.storeopeninghours.com/trader-joes-14th-and-3rd-new-york-ny",
+      "notes": "Hours 08:00-21:00 daily per third-party listing (most NYC Trader Joe's keep 08:00-21:00); not confirmed on the official site. Long lines in the evening; this is the original 14th St store, a second one is at 14th St & Avenue A."
+    },
+    {
+      "name": "Westside Market NYC (3rd Ave)",
+      "name_local": "",
+      "address": "84 3rd Ave, New York, NY 10003",
+      "neighborhood": "East Village / Union Square border (3rd Ave at E 12th)",
+      "lat": 40.7316,
+      "lng": -73.9884,
+      "hours": "24/7",
+      "tier": "ok",
+      "cats": [
+        "grocery",
+        "late"
+      ],
+      "buy": [
+        "Hot soup bar: chicken noodle, chicken and rice",
+        "Hot food bar: plain rice, steamed vegetables, roast chicken",
+        "Oatmeal and bananas; plain bread and bagels",
+        "Herbal tea"
+      ],
+      "avoid": "Skip the fried and spicy hot-bar items, tomato soups, sodas and iced coffee.",
+      "confidence": "low",
+      "source": "https://www.supermarketnews.com/grocery-operations/westside-market-nyc-meets-the-east-side-with-new-location",
+      "notes": "Opened 2014 as a 24/7 store and an aggregator still lists it as open 24 hours, but no 2025-2026 source confirms overnight hours — it may close around midnight now. Call ahead late at night. A second Westside Market is at 180 3rd Ave (16th-17th St)."
+    },
+    {
+      "name": "Morton Williams (Bleecker St)",
+      "name_local": "",
+      "address": "130 Bleecker St, New York, NY 10012",
+      "neighborhood": "Greenwich Village (Bleecker at LaGuardia Pl, NYU)",
+      "lat": 40.7281,
+      "lng": -73.9987,
+      "hours": "24/7",
+      "tier": "ok",
+      "cats": [
+        "grocery",
+        "late"
+      ],
+      "buy": [
+        "Bananas, oatmeal, plain bread and bagels",
+        "Canned or boxed chicken broth and plain rice",
+        "Self-serve hot buffet: plain rice, steamed vegetables, plain chicken",
+        "Chamomile tea"
+      ],
+      "avoid": "Skip the fried buffet items, spicy dishes, sodas and citrus juices.",
+      "confidence": "low",
+      "source": "https://www.atly.com/location/MORTONWILLIAMSSUPERMARKETS9",
+      "notes": "Closest full supermarket to Washington Square Park. An aggregator lists it as open 24 hours and the chain says 6 Manhattan stores are 24/7, but this branch is not individually confirmed — verify. Accepts EBT for hot food; no customer bathroom; crowded during the school year."
+    },
+    {
+      "name": "CVS Pharmacy (65 5th Ave, 24-hour store)",
+      "name_local": "",
+      "address": "65 5th Ave, New York, NY 10003",
+      "neighborhood": "Greenwich Village / Union Square (5th Ave at 14th St)",
+      "lat": 40.735,
+      "lng": -73.9933,
+      "hours": "24/7",
+      "tier": "ok",
+      "cats": [
+        "late"
+      ],
+      "buy": [
+        "Antacids (Tums, Pepcid/famotidine, omeprazole)",
+        "Plain crackers, instant oatmeal, bananas",
+        "Chamomile and ginger tea bags",
+        "Electrolyte drinks (non-carbonated)"
+      ],
+      "avoid": "Skip the sodas, chips, chocolate and citrus juices; antacids are not a substitute for seeing a doctor if symptoms persist.",
+      "confidence": "medium",
+      "source": "https://www.cvs.com/store-locator/details-directions/10612",
+      "notes": "24-hour status applies to the store only: the pharmacy counter opens 09:00 and closes 13:30-14:00 for lunch (evening close not captured, call). CVS store #10612. Official store page lists store and photo open 24 hours; pharmacy opens 09:00 with a 13:30-14:00 lunch closure (evening close not captured — call). Nearest confirmed 24-hour drugstore to NYU. The Walgreens at 1 Union Square S (store until 23:00) and CVS 158 Bleecker are closer alternatives with shorter hours."
+    },
+    {
+      "name": "CVS Pharmacy (158 Bleecker St)",
+      "name_local": "",
+      "address": "158 Bleecker St, New York, NY 10012",
+      "neighborhood": "Greenwich Village (Bleecker at Thompson, NYU)",
+      "lat": 40.7287,
+      "lng": -73.9999,
+      "hours": "Mo-Fr 08:00-20:00; Sa,Su 10:00-18:00",
+      "tier": "ok",
+      "cats": [
+        "late"
+      ],
+      "buy": [
+        "Antacids (Tums, famotidine, omeprazole)",
+        "Saltine crackers, instant oatmeal",
+        "Chamomile and ginger tea",
+        "Non-carbonated electrolyte drinks"
+      ],
+      "avoid": "Skip sodas, chips, chocolate and citrus juices.",
+      "confidence": "medium",
+      "source": "https://www.cvs.com/store-locator/new-york-ny-pharmacies/158-bleecker-street-corner-of-thompson-st-new-york-ny-10012/storeid=2058",
+      "notes": "Not a late-night option (closes 20:00 weekdays, 18:00 weekends); use the 65 5th Ave CVS overnight. CVS store #2058, the drugstore closest to the NYU core campus. Hours (Mo-Fr 08:00-20:00, Sa-Su 10:00-18:00) from pharmacy directory listings; phone (212) 982-3133."
+    }
+  ]
+}
