@@ -202,6 +202,10 @@ button { font: inherit; color: inherit; }
 
 /* Leaflet overrides */
 .leaflet-container { font-family: var(--font-body); }
+.leaflet-tile-pane { filter: saturate(.75) contrast(.95); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9) saturate(.6); }
+}
 .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--surface); color: var(--fg); box-shadow: var(--shadow); }
 .leaflet-popup-content { margin: 10px 14px; font-size: 13.5px; line-height: 1.45; }
 .leaflet-popup-content b { font-size: 14.5px; }
